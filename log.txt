@@ -306,3 +306,5 @@
 {"level":"info","message":{"body":{},"timestamp":"Fri Jun 27 2025 00:27:17 GMT+0530 (India Standard Time)","url":"/api/like?id=685979c77dec59eab0e9f193&type=Product"},"service":"request-logging"}
 {"level":"info","message":{"timestamp":"Fri Jun 27 2025 03:01:44 GMT+0530 (India Standard Time)","url":"/api/users/signin"},"service":"request-logging"}
 {"level":"info","message":{"body":{"id":"685979c77dec59eab0e9f193","type":"Product"},"timestamp":"Fri Jun 27 2025 03:02:13 GMT+0530 (India Standard Time)","url":"/api/like"},"service":"request-logging"}
+{"level":"info","message":{"body":{},"timestamp":"Mon Jul 28 2025 05:32:21 GMT+0530 (India Standard Time)","url":"/"},"service":"request-logging"}
+{"level":"info","message":{"body":{},"timestamp":"Mon Jul 28 2025 05:32:22 GMT+0530 (India Standard Time)","url":"/favicon.ico"},"service":"request-logging"}
