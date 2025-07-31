@@ -3,6 +3,8 @@ import express from "express";
 import bodyParser from "body-parser";
 import swagger from "swagger-ui-express";
 import cors from "cors";
+import rateLimit from "express-rate-limit";
+import helmet from "helmet";
 
 import productRoutes from "./src/features/product/product.routes.js";
 import userRoutes from "./src/features/user/user.routes.js";
@@ -19,6 +21,14 @@ import ConnectUsingMongoose from "./src/config/mongoose.config.js";
 import likesRoutes from "./src/features/likes/likes.routes.js";
 
 const server = express();
+
+server.use(helmet());
+server.use(
+  rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 100,
+  })
+);
 
 // CORS policy configuration
 
